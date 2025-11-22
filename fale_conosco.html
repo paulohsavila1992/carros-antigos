@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Carros Antigos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="https://www.uniube.br" target="_blank">
+                <img src="imagens/logo_uniube.png" alt="Logo Uniube" class="logo">
+            </a>
+        </div>
+        <h1>Fale Conosco</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="imagens.html">Galeria</a></li>
+            <li><a href="links.html">Links Úteis</a></li>
+            <li><a href="fale_conosco.html">Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="contact-section">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para enviar sua mensagem, dúvida ou sugestão.</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Você possui carro antigo?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="sim" name="possui_carro" value="sim">
+                        <label for="sim">Sim</label>
+                        
+                        <input type="radio" id="nao" name="possui_carro" value="nao">
+                        <label for="nao">Não</label>
+                        
+                        <input type="radio" id="pretendo" name="possui_carro" value="pretendo">
+                        <label for="pretendo">Pretendo adquirir</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="interesse">Áreas de Interesse:</label>
+                    <select id="interesse" name="interesse">
+                        <option value="">Selecione uma opção</option>
+                        <option value="restauracao">Restauração</option>
+                        <option value="compra">Compra e Venda</option>
+                        <option value="pecas">Peças e Acessórios</option>
+                        <option value="eventos">Eventos</option>
+                        <option value="historia">História Automobilística</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Enviar Mensagem</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Site Carros Antigos</p>
+    </footer>
+</body>
+</html>
